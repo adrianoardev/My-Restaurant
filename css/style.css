@@ -1,0 +1,100 @@
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+  font-family: "Nunito", sans-serif;
+
+  --primary-color: #303841;
+}
+
+html,
+body {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+
+/******************* RESET *******************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/******************* HEADER *******************/
+#header {
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 20vh;
+  top: 0;
+  position: fixed;
+}
+
+#header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+}
+
+#header .header-container .logo {
+  width: auto;
+  height: 15rem;
+}
+
+#header .menu-header {
+  display: flex;
+  cursor: pointer;
+  gap: 5rem;
+  font-size: 1.8rem;
+}
+
+#header .menu-header li a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+#header .menu-header li a:hover {
+  color: red;
+  filter: brightness(1.1);
+}
+
+/******************* SECTION *******************/
+
+.section-titulo {
+  background: #f3f3f3;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 20vh;
+}
+
+#section-img-pratos {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/diversos-pratos-comida.jpg);
+  background-position: center; /* centralizar a foto */
+  background-size: cover; /* aparecer o maximo possivel na area util */
+}
+
+#section-pratos {
+  display: flex;
+  width: 100vw; /* largura */
+  margin: 0 auto; /* para centralizar, após o uso do width */
+  background-color: red;
+  height: 100vh;
+}
+
+#section-img-pratos2 {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/pessoas-comendo.jpg);
+
+  background-size: cover; /* aparecer o maximo possivel na area util */
+  background-position: center;
+}
