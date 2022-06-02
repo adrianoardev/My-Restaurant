@@ -3,12 +3,13 @@
   font-family: "Nunito", sans-serif;
 
   --primary-color: #303841;
+  --second-color: #f3f3f3;
 }
 
 html,
 body {
   font-size: 1.6rem;
-  color: var(--primary-color);
+  background-color: white;
 }
 
 /******************* RESET *******************/
@@ -22,10 +23,10 @@ body {
 
 /******************* HEADER *******************/
 #header {
-  background: #f3f3f3;
+  background: var(--second-color);
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 20vh;
   top: 0;
   position: fixed;
@@ -35,12 +36,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 70vw;
+  width: 70%;
 }
 
 #header .header-container .logo {
   width: auto;
-  height: 15rem;
+  height: 18rem;
 }
 
 #header .menu-header {
@@ -65,36 +66,48 @@ body {
 /******************* SECTION *******************/
 
 .section-titulo {
-  background: #f3f3f3;
-  font-size: 2rem;
   display: flex;
+  background: var(--second-color);
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 20vh;
+  margin-bottom: 4rem;
 }
 
-#section-img-pratos {
-  width: 100vw;
+.section-titulo h2 {
+  font-size: 3rem;
+}
+
+#section-img-pratos img {
+  display: flex;
+  width: 100%;
   height: 100vh;
-  background: url(../img/diversos-pratos-comida.jpg);
   background-position: center; /* centralizar a foto */
   background-size: cover; /* aparecer o maximo possivel na area util */
 }
 
 #section-pratos {
   display: flex;
-  width: 100vw; /* largura */
-  margin: 0 auto; /* para centralizar, após o uso do width */
-  background-color: red;
-  height: 100vh;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
 }
 
-#section-img-pratos2 {
-  width: 100vw;
-  height: 100vh;
-  background: url(../img/pessoas-comendo.jpg);
+#section-pratos h3 {
+  color: var(--primary-color);
+}
 
-  background-size: cover; /* aparecer o maximo possivel na area util */
-  background-position: center;
+#section-pratos .prato {
+  display: flex;
+  align-items: center; /* alinha o texto no meio */
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+#section-pratos .prato img {
+  display: flex;
+  width: 60%;
+  height: 40vh;  
 }
