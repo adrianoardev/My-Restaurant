@@ -8,6 +8,7 @@
 
 html,
 body {
+  max-width: 1024px;
   font-size: 1.6rem;
   background-color: white;
 }
