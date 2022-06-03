@@ -1,6 +1,6 @@
 :root {
   font-size: 62.5%; /* 1rem = 10px */
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
 
   --primary-color: #303841;
   --second-color: #f3f3f3;
@@ -17,7 +17,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
   text-decoration: none;
 }
 
@@ -49,6 +48,7 @@ body {
   cursor: pointer;
   gap: 5rem;
   font-size: 1.8rem;
+  list-style: none;
 }
 
 #header .menu-header li a {
@@ -72,43 +72,64 @@ body {
   align-items: center;
   width: 100%;
   height: 20vh;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .section-titulo h2 {
   font-size: 3rem;
+  font-weight: 600;
 }
 
 #section-img-pratos img {
   display: flex;
   width: 100%;
   height: 100vh;
-  background-position: center; /* centralizar a foto */
-  background-size: cover; /* aparecer o maximo possivel na area util */
+  margin: 0 auto;
 }
 
-#section-pratos {
-  display: flex;
-  justify-content: center;
+#pratos {
   width: 70%;
   margin: 0 auto;
-  margin-bottom: 4rem;
 }
 
-#section-pratos h3 {
-  color: var(--primary-color);
-}
-
-#section-pratos .prato {
+.prato {
   display: flex;
-  align-items: center; /* alinha o texto no meio */
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 5%;
+  margin-bottom: 3rem;
 }
 
-#section-pratos .prato img {
+.prato img {
+  width: 50%;
+  height: 50vh;
+}
+
+.prato h3 {
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.prato-descricao {
+  width: 100%;
+  padding-left: 2rem;
+}
+
+.prato-descricao ul {
+  list-style-position: inside;
+}
+
+.prato-descricao ul li {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+#section-img-pratos2 img {
   display: flex;
-  width: 60%;
-  height: 40vh;
+  width: 70%;
   margin: 0 auto;
+  height: 80vh;
 }
