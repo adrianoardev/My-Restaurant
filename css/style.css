@@ -65,6 +65,13 @@ body {
 
 /******************* SECTION *******************/
 
+#section-img-pratos img {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
 .section-titulo {
   display: flex;
   background: var(--second-color);
@@ -78,13 +85,6 @@ body {
 .section-titulo h2 {
   font-size: 3rem;
   font-weight: 600;
-}
-
-#section-img-pratos img {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto;
 }
 
 #pratos {
@@ -127,58 +127,56 @@ body {
   font-size: 1.8rem;
 }
 
-#section-img-pratos2 img {
-  display: flex;
-  width: 70%;
+#chefs-cozinha {
+  width: 100%;
   margin: 0 auto;
-  height: 80vh;
 }
 
-#section-carrosel .carrosel img {
-  width: 500px;
-  height: 400px;
-}
-
-.carrosel {
-  width: 500px;
-  height: 400px;
-  overflow: hidden;
-  margin: 3rem auto;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
-}
-
-.carrosel ul {
+.img-chefs {
   display: flex;
-  list-style: none;
-  width: 1500px;
-  height: 400px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.carrosel li {
-  position: relative;
-  animation: slide 10s infinite ease-out;
+.img-chefs img {
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
 }
 
-@keyframes slide {
-  0% {
-    left: 0px;
-  }
-  20% {
-    left: 0px;
-  }
-  30% {
-    left: -500px;
-  }
-  50% {
-    left: -500px;
-  }
-  60% {
-    left: -1000px;
-  }
-  90% {
-    left: -1000px;
-  }
-  100% {
-    left: -1000px;
-  }
+
+
+
+
+
+
+#footer {
+  display: flex;
+  justify-content: center; 
+  width: 70%;
+  padding-bottom: 3rem; 
+  margin: 0 auto;  
+}
+
+
+.rede-social ul li {
+  display: inline;    
+}
+
+.contato ul li {
+       
+}
+
+.social-links ul li {
+  list-style: none; 
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 3.6rem;  
+}
+
+.social-links ul li:hover {
+  color: red;
+  filter: brightness(1.1);
 }
