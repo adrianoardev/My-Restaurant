@@ -55,7 +55,7 @@ body {
   color: var(--primary-color);
   font-weight: bold;
   text-transform: uppercase;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 #header .menu-header li a:hover {
@@ -127,56 +127,43 @@ body {
   font-size: 1.8rem;
 }
 
-#chefs-cozinha {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .img-chefs {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
 .img-chefs img {
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   object-fit: cover;
 }
 
-
-
-
-
-
-
-#footer {
-  display: flex;
-  justify-content: center; 
+#footer-container {
   width: 70%;
-  padding-bottom: 3rem; 
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
 .rede-social ul li {
-  display: inline;    
+  display: inline-block;
 }
 
+.rede-social ul li,
 .contato ul li {
-       
-}
-
-.social-links ul li {
-  list-style: none; 
+  list-style: none;
   color: var(--primary-color);
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 3.6rem;  
+  transition: all 0.4s ease;
+  font-size: 3.6rem;
 }
 
-.social-links ul li:hover {
+.rede-social ul li:hover,
+.contato ul li:hover {
   color: red;
   filter: brightness(1.1);
 }
