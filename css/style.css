@@ -189,3 +189,22 @@ footer h2 {
   text-align: center;
 }
 
+.fa-solid.fa-location-dot, .fa-solid.fa-square-phone, .fa-solid.fa-square-envelope {
+  font-size: 3.2rem;
+  margin: 0.8rem 0;
+  padding-right: 0.6rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.fa-solid.fa-location-dot:hover,
+.fa-solid.fa-square-phone:hover,
+.fa-solid.fa-square-envelope:hover {
+  color: red;
+  filter: brightness(1.1);
+}
+
+.localizacao, .telefone, .email {
+  display: flex;  
+  align-items: center;   
+}
