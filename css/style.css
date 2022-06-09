@@ -141,32 +141,51 @@ body {
   object-fit: cover;
 }
 
-#footer-container {
+footer {
+  display: flex;
   width: 70%;
   margin: 0 auto;
 }
 
-.footer {
+footer h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.footer-content p, .right-box {
+  text-align: justify;
+}
+
+.footer-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.rede-social ul li {
-  display: inline-block;
+.footer-content p, .content span {
+  color: var(--primary-color);
+  font-size: 1.7rem;  
+  line-height: 2.5rem;
 }
 
-.rede-social ul li,
-.contato ul li {
-  list-style: none;
+.left-box,
+.center-box,
+.right-box {
+  width: 33%;
+}
+
+.center-box a {
   color: var(--primary-color);
   cursor: pointer;
   transition: all 0.4s ease;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
+  margin: 0.3rem;
 }
 
-.rede-social ul li:hover,
-.contato ul li:hover {
+.center-box a:hover {
   color: red;
   filter: brightness(1.1);
 }
+
+.center-box {
+  text-align: center;
+}
+
