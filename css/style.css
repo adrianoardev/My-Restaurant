@@ -152,7 +152,8 @@ footer h2 {
   padding-bottom: 1rem;
 }
 
-.footer-content p, .right-box {
+.footer-content p,
+.right-box {
   text-align: justify;
 }
 
@@ -160,9 +161,10 @@ footer h2 {
   display: flex;
 }
 
-.footer-content p, .content span {
+.footer-content p,
+.content span {
   color: var(--primary-color);
-  font-size: 1.7rem;  
+  font-size: 1.7rem;
   line-height: 2.5rem;
 }
 
@@ -189,7 +191,9 @@ footer h2 {
   text-align: center;
 }
 
-.fa-solid.fa-location-dot, .fa-solid.fa-square-phone, .fa-solid.fa-square-envelope {
+.fa-solid.fa-location-dot,
+.fa-solid.fa-square-phone,
+.fa-solid.fa-square-envelope {
   font-size: 3.2rem;
   margin: 0.8rem 0;
   padding-right: 0.6rem;
@@ -204,7 +208,76 @@ footer h2 {
   filter: brightness(1.1);
 }
 
-.localizacao, .telefone, .email {
-  display: flex;  
-  align-items: center;   
+.localizacao,
+.telefone,
+.email {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+
+ 
+  #header {
+  display: flex;
+  width: 100%;   
+  } 
+
+  #header ul  {  
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;   
+    
+    cursor: pointer;    
+    font-size: 1.7rem;
+    list-style: none;    
+  }
+
+  #section-img-pratos img {
+    display: flex;
+    width: auto;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .section-titulo {
+    display: flex;
+    background: var(--second-color);
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 15vh;
+    margin-bottom: 3rem;
+  }
+  .section-titulo h2 {
+    display: flex;
+    width: auto;
+  }
+ 
+  .section-titulo h2 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  #pratos {
+    width: 50%;
+    height: 50%;    
+  }
+  
+  .prato {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 3rem;
+  }
+  
+  .prato img {
+    width: 50%;
+    height: 15vh;
+  }
+ 
+
+
 }
