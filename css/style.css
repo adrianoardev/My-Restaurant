@@ -215,7 +215,7 @@ footer h2 {
   align-items: center;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 450px) {
 
  
   #header {
