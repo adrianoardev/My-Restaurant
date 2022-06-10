@@ -219,7 +219,7 @@ footer h2 {
 
  
   #header {
-  display: flex;
+  flex-direction: column;
   width: auto;   
   } 
 
